@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница сайта</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header>
+        <div class="container">
+            <nav class="header_navigation">
+                <button class="header_burger" onclick="headerBurger()">&#9776;</button>
+                <ul class="header_list list">
+                    <li class="header_item">
+                        <a href="#" class="header_link link">Главная</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#aboutProduct" class="header_link link">О продукте</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#advantages" class="header_link link">Преимущества</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#team" class="header_link link">Команда</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#contacts" class="header_link link">Контакты</a>
+                    </li>
+                </ul>
+                <button class="header_order-button">Заказать</button>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <div class="container">
+            <h1 class="header header-one">Главная страница</h1>
+            <section id="aboutProduct" class="section fade-slide">
+                <h2 class="header header-two">О продукте</h2>
+            </section>
+            <section id="advantages" class="section fade-slide">
+                <h2 class="header header-two">Преимущества</h2>
+            </section>
+            <section id="team" class="section fade-slide">
+                <h2 class="header header-two">Команда</h2>
+            </section>
+            <section id="contacts" class="section fade-slide">
+                <h2 class="header header-two">Контакты</h2>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container footer_container">
+            <a href="tel:+79437494845" class="link">+7 (943) 749 48-45</a>
+            <ul class="socials_list list">
+                <li>
+                    <a href="#" class="link">
+                        <img src="img/vk.svg" alt="ВК" class="socials_img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        <img src="img/ok.svg" alt="Одноклассники" class="socials_img">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link">
+                        <img src="img/telegramm.svg" alt="Телеграм" class="socials_img">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Связаться с нами</h2>
+            <form>
+            <label>Имя:</label>
+            <input type="text" placeholder="Ваше имя" required>
+            <label>Телефон или email:</label>
+            <input type="text" placeholder="Телефон или email" required>
+            <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
